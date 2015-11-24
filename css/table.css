@@ -5,13 +5,28 @@
   border-color: #001166;
   background-image: url("../img/binding_light.jpg");
 }
+th {
+  font-size: 2em;
+}
+td {
+  font-size: 1.2em;
+}
+input[type="checkbox"] {
+  margin: 4px 50px 0;
+}
 .btn-danger {
   background-color: #660011;
   border-color: #660011;
 }
+form {
+  margin-top: 50px;
+}
 .btn-success {
   background-color: #116600;
   border-color: #116600;
+}
+.btn-warning {
+  margin-top: 37px;
 }
 .checked {
   text-decoration: line-through;

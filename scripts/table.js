@@ -28,4 +28,13 @@ $(document).ready(function() {
     $(this).parents("tr").addClass("checked"); 
     $(this).remove();  
   });
+
+  //clear table except for first table row
+  $(".btn-warning").on("click", function(){
+    var sure = confirm("Are you sure? Once the data is gone you can't get it back!");
+    if (sure === false){
+      return;
+    }
+    $("td").remove();
+  });
 });
