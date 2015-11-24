@@ -4,8 +4,7 @@ $(document).ready(function() {
     $(this).parents("tr").remove();
   });
 
-  $(".btn-success").on("click", function(e) {
-    
+  $(".btn-success").on("click", function(e) {   
     e.preventDefault();   
     var forminput = $("#formtext").val ();
     var addRow = $("<tr>");
@@ -22,9 +21,10 @@ $(document).ready(function() {
     $("tbody").append(addRow);   
   });
 
-  // $(document).on("click","table input",function(){
-  //   // debugger;
-  //   $("tr:first-child").addClass("checked");
-  // } )
+  $(document).on("click","table input",function(){
+    // debugger;    
+    $(this).parents("tr").addClass("checked"); 
+    $(this).remove();  
+  });
 });
 // empty the form-control after the row is added to table

@@ -1,6 +1,19 @@
 .jumbotron {
   text-align: center;
+  color: #001166;
+  border: 1px solid;
+  border-color: #001166;
+  background-image: url("../img/binding_light.jpg");
+}
+.btn-danger {
+  background-color: #660011;
+  border-color: #660011;
+}
+.btn-success {
+  background-color: #116600;
+  border-color: #116600;
 }
 .checked {
   text-decoration: line-through;
+  color: #660011;
 }
