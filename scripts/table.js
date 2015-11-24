@@ -15,16 +15,17 @@ $(document).ready(function() {
     var rowTd2 = $("<td>").append(checkbox);
     var delButton = $("<button>").addClass("btn btn-danger").append("Delete");
     var rowTd3 = $("<td>").append(delButton);    
+
     addRow.append(rowTd1);
     addRow.append(rowTd2);    
     addRow.append(rowTd3);
-    $("tbody").append(addRow);   
+    $("tbody").append(addRow); 
+    
+    $("#formtext").val("").focus();  
   });
 
-  $(document).on("click","table input",function(){
-    // debugger;    
+  $(document).on("click","table input",function(){   
     $(this).parents("tr").addClass("checked"); 
     $(this).remove();  
   });
 });
-// empty the form-control after the row is added to table
