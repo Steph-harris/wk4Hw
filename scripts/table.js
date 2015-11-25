@@ -9,9 +9,7 @@ $(document).ready(function() {
     var forminput = $("#formtext").val ();
     var addRow = $("<tr>");
     var rowTd1 = $("<td>").append(forminput);
-    var checkbox = $("<input>", {
-      type:"checkbox"
-    });
+    var checkbox = $("<input>").attr("checkbox");
     var rowTd2 = $("<td>").append(checkbox);
     var delButton = $("<button>").addClass("btn btn-danger").append("Delete");
     var rowTd3 = $("<td>").append(delButton);    
